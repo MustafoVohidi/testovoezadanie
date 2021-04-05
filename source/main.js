@@ -104,40 +104,49 @@ function sliderMove(event){
 
     if(x2 < 800 && x2 > 670){
         if(bottomSlide != 1){
-          showBottomSlide_1(); 
+          showBottomSlide(); 
+          slideConteiner.style.transform = `translateX(${ -2048 }px)`;
           bottomSlide = 1; 
         }
       }
     
     if(x2 < 660 && x2 > 370){
         if(mainSlide != 2){
-          showBottomSlide_2(); 
+          showBottomSlide(); 
+          slideConteiner.style.transform = `translateX(${ -1024 }px)`
           bottomSlide = 2; 
         }
       }
 
     if(x2 < 360 && x2 > 210){
         if(mainSlide != 3){
-          showBottomSlide_3(); 
+          showBottomSlide(); 
+          slideConteiner.style.transform = `translateX(${ 0 }px)`;
           bottomSlide = 3; 
         }
       }
 }
-
+ 
 
 function mainAnimation(target){
 
     if(target == 'up'){
       if (position < 0 && position > -768){
         showSlide_1();
+        // mainElement.style.transform = `translateY(${-768}px)`;
+        // position = -768;
       } else if (position < -818 && position > -1536){
           showSlide_2();
+          // mainElement.style.transform = `translateY(${-1536}px)`;
+          // position = -1536;
       }
     } else {
       if (position > -768 && position < 0){
         showSlide_0();
       } else if (position > -1536 && position < -768){
         showSlide_1();
+        // mainElement.style.transform = `translateY(${-768}px)`;
+        // position = -768;
       }
     }
 }

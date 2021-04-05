@@ -17,9 +17,6 @@
 }
 
 
-/*---------------*/
-
-
 .container{
   display: flex;
   flex-direction: row;
@@ -30,7 +27,44 @@
 .slide{
   height: 768px; 
   width: 1024px; 
+  position:relative;
 }
+.slide h2 {
+  position: absolute;
+}
+.header_1{
+  z-index: 5;
+  top: 17vh;
+  font-size: 57px;
+  font-weight: 400;
+  left: 6.7vw;
+  letter-spacing: 1.3px;
+  line-height: 1.1;
+  color: #0d319c;
+}
+.header_2{
+  z-index: 5;
+top: 31vh;
+font-size: 57px;
+font-weight: 100;
+left: 27.6vw;
+letter-spacing: 1.4px;
+line-height: 1.1;
+color: #fff;
+text-align: center;
+}
+.header_3{
+  z-index: 5;
+  top: 14.2vh;
+  font-size: 33px;
+  font-weight: 100;
+  left: 8.3vw;
+  letter-spacing: 1.5px;
+  line-height: 1.1;
+  color: #fff;
+  text-align: center;
+}
+
 
 
 .control{
@@ -105,4 +139,66 @@
   z-index: 1;
 }
 
+.r{  position: absolute;
+     top: 0; 
+     left: 0; 
+     right: 0; 
+     bottom: 0; 
+     margin: auto; 
+     opacity: 0; 
+     border-style: solid; 
+     border-radius: 25px; 
+     border-width: 2px; 
+     border-color: red;
+     background-color: orange;  
+   }  
+fire-round1 .r1{ animation: animate-round1 3s infinite;}   
+fire-round1 .r2{ animation: animate-round1 3s infinite; 
+     animation-delay: 1.2s;}    
+fire-round1 .r3{ animation: animate-round1 3s infinite; 
+     animation-delay: 2.2s;}   
 
+
+  @keyframes animate-round1{ 
+       from { width: 0px; height: 0px; 
+              opacity: 0.7;
+              border-width: 1px;}             
+       to {   width: 50px; 
+              height: 50px;  
+              opacity: 0.3; 
+              border-width: 3px;}  
+  }
+
+ fire-round2 .r1{ animation: animate-round2 3s infinite;}   
+ fire-round2 .r2{ animation: animate-round2 3s infinite; 
+       animation-delay: 1.2s;}    
+  fire-round2 .r3{ animation: animate-round2 3s infinite; 
+       animation-delay: 2.2s;}   
+
+
+    @keyframes animate-round2{ 
+         from { width: 0px; height: 0px; 
+                opacity: 0.7;
+                border-width: 1px;}             
+         to {   width: 30px; 
+                height: 30px;  
+                opacity: 0.3; 
+                border-width: 3px;}  
+         }
+
+   fire-round3   .r1{ animation: animate-round3 3s infinite ;}   
+   fire-round3 .r2{ animation: animate-round3 3s infinite; 
+         animation-delay: 1.2s;}    
+    fire-round3  .r3{ animation: animate-round3 3s infinite; 
+         animation-delay: 2.2s;}   
+
+
+      @keyframes animate-round3{ 
+           from { width: 0px; height: 0px; 
+                  opacity: 0.7;
+                  border-width: 1px;}             
+           to {   width: 15px; 
+                  height: 15px;  
+                  opacity: 0.3; 
+                  border-width: 3px;}  
+           }
