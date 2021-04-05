@@ -133,20 +133,14 @@ function mainAnimation(target){
     if(target == 'up'){
       if (position < 0 && position > -768){
         showSlide_1();
-        // mainElement.style.transform = `translateY(${-768}px)`;
-        // position = -768;
       } else if (position < -818 && position > -1536){
           showSlide_2();
-          // mainElement.style.transform = `translateY(${-1536}px)`;
-          // position = -1536;
       }
     } else {
       if (position > -768 && position < 0){
         showSlide_0();
       } else if (position > -1536 && position < -768){
         showSlide_1();
-        // mainElement.style.transform = `translateY(${-768}px)`;
-        // position = -768;
       }
     }
 }
