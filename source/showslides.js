@@ -1,29 +1,9 @@
 
-let positionSlide=[0,-768,-1536];
-
-// let showSlide ={
-  
-//   showSlide_5:function(){
-//     if (!isBottom) {
-//       mainElement.classList.add("animate0");
-//       mainElement.style.transform = `translateY(${0}px)`;
-//       position = 0;
-//       mainElement.addEventListener('transitionend', function () {
-//         mainElement.classList.remove("animate0");
-//         if (verticalSlide == 1) { todown.style.display = "inline" }
-//       });
-//       verticalSlide = 1;
-//       paginChange(pagin_1);
-//     }
-//   }
-// }
-
-
-// function showSlide_0() {
-
-//     __proto__:showSlide;
-
-// }
+function showBottomSlide(){
+  slideConteiner.classList.add("animate1")
+  sliderElement.addEventListener("transitionend", 
+  () => sliderElement.classList.remove("animate1"));
+}
 
 
 function showSlide_0() {
@@ -66,13 +46,6 @@ function showSlide_2() {
     verticalSlide = 3
     paginChange(pagin_3);
   }
-}
-
-
-function showBottomSlide(){
-  slideConteiner.classList.add("animate1")
-  sliderElement.addEventListener("transitionend", 
-  () => sliderElement.classList.remove("animate1"));
 }
 
 
